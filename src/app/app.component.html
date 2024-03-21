@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (onNavigationClicked)="onNavigationClickedHandler($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="navItemSelected == 0"></app-recipes>
+      <app-shopping-list *ngIf="navItemSelected == 1"></app-shopping-list>
     </div>
   </div>
 </div>
