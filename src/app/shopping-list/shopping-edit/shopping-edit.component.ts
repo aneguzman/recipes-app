@@ -11,7 +11,7 @@ export class ShoppingEditComponent {
   @ViewChild('nameInput') nameInputRef: ElementRef;
   @ViewChild('amountInput') amountInputRef: ElementRef;
 
-  addIngredient(name: string, amount: number) {
+  onAddIngredient() {
     this.onIngredientAdded.emit(
       new Ingredient(this.nameInputRef.nativeElement.value, this.amountInputRef.nativeElement.value));
   }
