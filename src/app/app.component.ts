@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipes-app';
-  navItemSelected = 0;
-
-  onNavigationClickedHandler(index: number) {
-    this.navItemSelected = index;
-  }
 }

@@ -6,10 +6,5 @@ import { Component, EventEmitter, Output } from "@angular/core";
     styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    @Output() onNavigationClicked = new EventEmitter<number>();
-
-    onNavigationItemSelected(navigationItemIndex: number) {
-        this.onNavigationClicked.emit(navigationItemIndex);
-    }
 
 }
